@@ -1,0 +1,1760 @@
+{
+	"name": "PWA",
+	"apps": [
+		{
+			"name": "Rickdetect",
+			"link": "https://rickdetect.johanstickman.com/",
+			"icon": "https://rickdetect.johanstickman.com/favicon.png",
+			"description": "Détecter des rick rolls, juste à partir d'un lien.",
+			"manifestLink": "https://rickdetect.johanstickman.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tower Game",
+			"link": "https://www.towergame.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539285157804-towergame-icon-512.png",
+			"description": "Stack blocks and build the tallest tower!",
+			"manifestLink": "https://towergame.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Dino Game",
+			"link": "https://offline-dino-game.firebaseapp.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536211720248-dinogame-android-chrome-144x144.png",
+			"description": "The Chrome Dino Game but on the web, online or offline, on any browser. and with a bigger game ;P",
+			"manifestLink": "https://offline-dino-game.firebaseapp.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "The Cube",
+			"link": "https://bsehovac.github.io/the-cube/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1541289835730-apple-touch-icon.png",
+			"description": "See if you can solve this classic puzzle game.",
+			"manifestLink": "https://bsehovac.github.io/the-cube/assets/icons/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Doodle Cricket",
+			"link": "https://doodlecricket.github.io/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535443532926-doodlecricket-android-chrome-512x512.png",
+			"description": "Welcome to the Google Doodle Cricket Game! Powered By Google's Advance AI Algorithms. This is a game built for you the cricket fan! Every cricket lover can now have the most lightweight mobile cricket game at the palm of their hands! You can play the maximum number of cricket shots without having over limits. Be prepared for awesome fun!",
+			"manifestLink": "https://doodlecricket.github.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tic Tac Toe",
+			"link": "https://tmaiadev-tictactoe.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1562616305193-tictactoe-android-icon-512x512.png",
+			"description": "Play the classic TicTacToe Mini Game",
+			"manifestLink": "https://tmaiadev-tictactoe.netlify.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "BreakLock",
+			"link": "https://maxwellito.github.io/breaklock/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688777555-breaklock-icon-256x256.png",
+			"description": "Link the dots to find the lock pattern.",
+			"manifestLink": "https://maxwellito.github.io/breaklock/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Dominoes",
+			"link": "https://dominoes.playdrift.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535636850478-dominoes-ic_launcher_128@4x.png",
+			"description": "Play some bones! Dominoes is the classic logic game. Single- and online multiplayer.",
+			"manifestLink": "https://dominoes.playdrift.com/webmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "VaporBoy",
+			"link": "https://vaporboy.net/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548494282937-vaporboy-web_hi_res_512.png",
+			"description": "A VaporWave Gameboy / Gameboy Color Emulator PWA. ⚛️ Powered by wasmBoy. 🎮",
+			"manifestLink": "https://vaporboy.net/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Dice Shake",
+			"link": "https://dice.richardekwonye.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537810742275-diceshake-app-icon-512.png",
+			"description": "Shake your device to roll the dice.",
+			"manifestLink": "https://dice.richardekwonye.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Hangapp",
+			"link": "https://kylesureline.com/hangapp/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548778704618-hangapp-splash-icon.png",
+			"description": "A simple hangman game. Retrieves definitions from m-w.com and caches them for offline use.",
+			"manifestLink": "https://kylesureline.com/hangapp/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Dead or Alive",
+			"link": "https://rick-and-morty-game.ahmetkapusuz.vercel.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1560203396810-logo.png",
+			"description": "This is a fun game for Rick and Morty fans. Try to guess if character is dead or alive.",
+			"manifestLink": "https://rick-and-morty-game.ahmetkapusuz.vercel.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "The Circle",
+			"link": "https://thecircle.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1553425156932-thecircle-ico512.png",
+			"description": "Funny circle flip game.",
+			"manifestLink": "https://thecircle.netlify.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Jigsaw Puzzles",
+			"link": "https://www.yojigsaw.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688970902-jigsawpuzzles-chrome_192.png",
+			"description": "It's a jigsaw puzzles game.",
+			"manifestLink": "https://www.yojigsaw.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Klondike Solitaire",
+			"link": "https://freesolitaire.win/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688825733-klondikesolitaire-favicon192.png",
+			"description": "Play the classic Patience card game, in its draw-one or draw-three variant. Only winnable games are generated, and the app can give you hints on the best moves to do.",
+			"manifestLink": "https://freesolitaire.win/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Snake",
+			"link": "https://tmaiadev-snake.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1562604697263-oldschoolsnake-android-chrome-512x512.png",
+			"description": "Oldschool Snake Mini Game",
+			"manifestLink": "https://tmaiadev-snake.netlify.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tetra",
+			"link": "https://tmaiadev-tetra.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1565244852302-tetra-favicon-512x512.png",
+			"description": "An old school black and white game about falling four-piece blocks",
+			"manifestLink": "https://tmaiadev-tetra.netlify.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "grrd's Tic Tac Toe",
+			"link": "https://grrd01.github.io/TicTacToe/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1546640223742-grrdstictactoe-icon_512.png",
+			"description": "grrd’s Tic Tac Toe is a HTML5 Game that works offline. You can play against the computer or a second player.",
+			"manifestLink": "https://grrd01.github.io/TicTacToe/manifest/appmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Arrows Rain",
+			"link": "https://arrows-rain.firebaseapp.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536300039437-arrowsrain-logo.png",
+			"description": "Destroy the falling arrows!",
+			"manifestLink": "https://arrows-rain.firebaseapp.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Mancala",
+			"link": "https://mancala.playdrift.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535983577715-mancala-ic_launcher_128@4x.png",
+			"description": "Play Mancala, the classic board game. Single- and online multiplayer.",
+			"manifestLink": "https://mancala.playdrift.com/webmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "grrd's 4 in a Row",
+			"link": "https://grrd01.github.io/4inaRow/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688941652-grrds4inarow-icon_192.png",
+			"description": "grrd's 4 in a Row is a connect-4 game for one or two players with a decent AI, selectable difficulty from Kid to Pro that works well on your smartphone.",
+			"manifestLink": "https://grrd01.github.io/4inaRow/Manifest/appmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Bubble Pairs",
+			"link": "https://bubblepairs.apps.in.rs/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535358297652-bubblepairs-game-icon-big.png",
+			"description": "A good old memory game with new and unique elements that make play experience remarkable.",
+			"manifestLink": "https://bubblepairs.apps.in.rs/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Regretris",
+			"link": "https://wits.github.io/regretris/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543024281438-regretris-android-chrome-512x512.png",
+			"description": "Tetris + 2048.",
+			"manifestLink": "https://wits.github.io/regretris/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Renzy's Yahtzee",
+			"link": "https://yahtzee.renzys.media/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1563834634244-renzysyahtzee-192.png",
+			"description": "Basic Game of Yahtzee as Progressive Web Application with Offline Mode",
+			"manifestLink": "https://yahtzee.renzys.media/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Dice",
+			"link": "https://dice.cbate.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1553085281232-dice-firefox-marketplace-512-512.png",
+			"description": "Toss dice, both standard and specialty.",
+			"manifestLink": "https://dice.cbate.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PoopSweeper",
+			"link": "https://poopsweeper-game.firebaseapp.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537990315212-poopsweeper-icon-512x512.59157f8b.png",
+			"description": "Minesweeper's like game, but with poop emoji.",
+			"manifestLink": "https://poopsweeper-game.firebaseapp.com/manifest.c42e1e36.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Mastermind",
+			"link": "https://mastermind.jull.dev/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1552389630565-mastermind-android-chrome-512x512.png",
+			"description": "Mastermind is a code breaking game. Can you crack the secret code?",
+			"manifestLink": "https://mastermind.jull.dev/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "grrd's Puzzle",
+			"link": "https://grrd01.github.io/Puzzle/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688939240-grrdspuzzle-g_icon_192.png",
+			"description": "grrd's Puzzle is a HTML5 jigsaw puzzle game for your smartphone or desktop. You can choose from various images or play with your own pictures at the level of difficulty of your choice.",
+			"manifestLink": "https://grrd01.github.io/Puzzle/Manifest/appmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PROXX",
+			"link": "https://proxx.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1559293773797-proxx-icon-05a70868.png",
+			"description": "PROXX is a game of proximity inspired by the legendary game Minesweeper. ",
+			"manifestLink": "https://proxx.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Beautiful Mind Games",
+			"link": "https://beautifulmindgames.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1546024973227-beautifulmindgames-BMG-512.png",
+			"description": "A collection of original logic games and brainteasers for all ages.",
+			"manifestLink": "https://beautifulmindgames.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Waterwars",
+			"link": "https://vcjhwebdev.github.io/waterwars/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1554883749339-waterwars-splash-icon.png",
+			"description": "Fire! Hit and sunk! Play against the computer in this classic take on battleship.",
+			"manifestLink": "https://vcjhwebdev.github.io/waterwars/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Photo Pieces",
+			"link": "https://photo-pieces.vercel.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1538331250069-photopieces-icon.png",
+			"description": "Play Photo Pieces. Photo Pieces is a fun and engaging free online game. Play it!",
+			"manifestLink": "https://photo-pieces.vercel.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Snake Hunt",
+			"link": "https://snakehunt.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543961700202-snakehunt-ico512.png",
+			"description": "Unique version of the classic snake game. Catch as many moving object as possible!",
+			"manifestLink": "https://snakehunt.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "grrd's Dice",
+			"link": "https://grrd01.github.io/Dice/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537249672218-grrdsdice-icon_512.png",
+			"description": "grrd’s Dice is a 3D Dice Roller app and a Yahtzee game for one to five players.",
+			"manifestLink": "https://grrd01.github.io/Dice/manifest/appmanifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Slapjack",
+			"link": "https://vcjhwebdev.github.io/slapjack/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1555001185016-slapjack-splash-icon.png",
+			"description": "The game of Slapjack! Click the jack before the computer does!",
+			"manifestLink": "https://vcjhwebdev.github.io/slapjack/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Number Guesser",
+			"link": "https://num-guess.firebaseapp.com/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536687541689-numberguesser-icon-512.png",
+			"description": "Number Guesser is a simple Number Guessing game where computer chooses a RANDOM number from the given circle blocks in background and you have to guess the number, it is also a Progressive Web App made entirely from front-end Javascript.",
+			"manifestLink": "https://num-guess.firebaseapp.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Finding Nora",
+			"link": "https://finding-nora.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537531724372-findingnora-android-icon-512x512.png",
+			"description": "Learn to spell by finding all the letters of your name, or any other word.",
+			"manifestLink": "https://finding-nora.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tricky Trivia",
+			"link": "https://vcjhwebdev.github.io/tricky-trivia/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1554656803082-trickytrivia-splash-icon.png",
+			"description": "A simple trivia game.",
+			"manifestLink": "https://vcjhwebdev.github.io/tricky-trivia/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "2048",
+			"link": "https://2048-opera-pwa.surge.sh/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1517942372440-2048.jpg",
+			"description": "Join the numbers and get to the 2048 tile. Swipe up, down, left or right to move the tiles. When two tiles with the same number touch, they merge into one!",
+			"manifestLink": "https://2048-opera-pwa.surge.sh/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Snake",
+			"link": "https://snake-pwa.github.io/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688767764-snake-icon-192.png",
+			"description": "A simple snake game",
+			"manifestLink": "https://snake-pwa.github.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Snake Logic",
+			"link": "https://snakelogic.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688976862-snakelogic-ico192.png",
+			"description": "One of the most original snake game ever. Logical Thinking is Essential!",
+			"manifestLink": "https://snakelogic.com/manifest-v2.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Calculator The Game",
+			"link": "https://calculator-game-reactjs.vercel.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688893435-calculatorthegame-icon192x192.png",
+			"description": "Get to the desired number by using the buttons a limited number of times.",
+			"manifestLink": "https://calculator-game-reactjs.vercel.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Memory Game",
+			"link": "https://pwa-memory-game.surge.sh/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688817300--192.png",
+			"description": "Play this game and strengthen your memory!",
+			"manifestLink": "https://pwa-memory-game.surge.sh/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "The Beast of Torrack Moor",
+			"link": "https://adventuron.io/games/thebeast",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548026290610-beast 512.png",
+			"description": "Remastered from its 1988 release, you are a young reporter, sent on an assignment to investigate sighting on a local moor.",
+			"manifestLink": "https://adventuron.io/games/thebeast/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "damn dog",
+			"link": "https://damn.dog/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536040511561-damndog-android-chrome-512x512.png",
+			"description": "A guessing game for wikiHow illustrations.",
+			"manifestLink": "https://damn.dog/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Llama or Alpaca",
+			"link": "https://llama.party/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536580290004-llamaoralpaca-android-icon-192x192.png",
+			"description": "Can you tell the difference between llamas or alpacas? This fun, educational web game tests your knowledge of these gentle animals. Play today!",
+			"manifestLink": "https://llama.party/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "The Not Quiz",
+			"link": "https://thenotquiz.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688956551-thenotquiz-tnq-icon.png",
+			"description": "Home of the 'Dead or Not Dead' quiz, the 'Number 1 or Not Number 1' quiz and the 'Oscar or Not Oscar' quiz.",
+			"manifestLink": "https://thenotquiz.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Blackjack",
+			"link": "https://vcjhwebdev.github.io/blackjack/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557436500247-blackjack-splash-icon.png",
+			"description": "A simple blackjack game, complete with a betting system that keeps track of your high score.",
+			"manifestLink": "https://vcjhwebdev.github.io/blackjack/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Sudoku",
+			"link": "https://vcjhwebdev.github.io/sudoku/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557436453950-sudokugame-splash-icon.png",
+			"description": "Choose your difficulty and play this take on the classic Sudoku.",
+			"manifestLink": "https://vcjhwebdev.github.io/sudoku/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "QR Snapper",
+			"link": "https://qrsnapper.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537897490468-qrsnapper-icon-1024x1024.png",
+			"description": "Capture QR Codes in real time with this simple app.",
+			"manifestLink": "https://qrsnapper.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Snapdrop",
+			"link": "https://snapdrop.net",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1534060843742-snapdrop-chrome-touch-icon-192x192.png",
+			"description": "Snapdrop is an easy way to transfer files. Instantly share images, video, PDF, and links across devices.",
+			"manifestLink": "https://onedoes.github.io/snapdrop/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PWA Calculator",
+			"link": "https://calculator.iondrimbafilho.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688963968-pwacalculator-icon-192x192.png",
+			"description": "PWA Calculator built with ReactJS Redux ES6.",
+			"manifestLink": "https://calculator.iondrimbafilho.me/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Emojityper",
+			"link": "https://emojityper.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688901779-emojityper-icon-192.png",
+			"description": "Emoji ready to copy and paste! List of all emoji, just type some words to get emoji. Laughing crying emoji 😂⌨.",
+			"manifestLink": "https://emojityper.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Pencil",
+			"link": "https://www.pencilapp.io/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536903885180-pencil-android-chrome-512x512.png",
+			"description": "An intelligent text editor for writing prose.",
+			"manifestLink": "https://www.pencilapp.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Chrome Canvas",
+			"link": "https://canvas.apps.chrome/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545433020178-chromecanvas-canvas_256.png",
+			"description": "The Chrome OS drawing app.",
+			"manifestLink": "https://canvas.apps.chrome/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "MultiCalc",
+			"link": "https://www.multicalculator.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1555838303450-multicalc-icon-512.png",
+			"description": "A powerful, modern, multifunctional calculator made for everyone",
+			"manifestLink": "https://www.multicalculator.app/assets/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Speedometer",
+			"link": "https://speedometer.pwa.run/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544957431448-speedometer-speedometer.png",
+			"description": "A tiny no-frills speedometer progressive web app based on Geolocation API, AmbientLightSensor API, and WakeLock API.",
+			"manifestLink": "https://speedometer.pwa.run/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Code QR",
+			"link": "https://roneetkumar.github.io/code/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688932281-codeqr-favicon.ico",
+			"description": "Code is a beautifully designed Progressive Web Application to generate QR Codes form Text.",
+			"manifestLink": "https://roneetkumar.github.io/code/functions/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Calendo",
+			"link": "https://calendo.dav-apps.tech/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1568660338104-calendo-icon-512x512.png",
+			"description": "Calendo is a simple tool for managing your todos and appointments.",
+			"manifestLink": "https://calendo.dav-apps.tech/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "momentum",
+			"link": "https://momentum.earth/app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535798846588-momentum-android-chrome-512x512.png",
+			"description": "Smooth lists to structure your references, ideas and projects into actionable steps.",
+			"manifestLink": "https://momentum.earth/manifest.json#v=xQrXY5pEPX",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Shrink Me",
+			"link": "https://shrinkme.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1534060943662-icon-384x384.png",
+			"description": "Shrink Me enables you to easily compress your images in order       to make your site and apps smaller and faster for your users.",
+			"manifestLink": "https://shrinkme.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PhotoStack",
+			"link": "https://edit.photostack.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1558992730626-photostack-android-chrome-512x512.png",
+			"description": "A free and open-source batch photo editor with watermarking support.",
+			"manifestLink": "https://edit.photostack.app/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Stopwatch",
+			"link": "https://www.stopwatch-app.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688859763-stopwatch-icon-144.png",
+			"description": "Simple material design stopwatch app with the ability to track laps.",
+			"manifestLink": "https://www.stopwatch-app.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Nwote",
+			"link": "https://nwote.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1566976060420-nwote-icon-512x512.png",
+			"description": "The new note app. Take note everywhere at anytime with the offline support. Try now !",
+			"manifestLink": "https://nwote.netlify.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "StackEdit",
+			"link": "https://stackedit.io/app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1550942728632-stackedit-icon_512x512.bc1452c3b77b59eb0d8c449de1c77310.png",
+			"description": "Full-featured, open-source Markdown editor.",
+			"manifestLink": "https://stackedit.io/manifest.c9128ce574e7548a3b0d3bcd8bfa212c.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "SoundDrown",
+			"link": "https://sounddrown.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539667761651-sounddrown-512.png",
+			"description": "SoundDrown is a simple, easy to use, noise generator, that generates white noise, pink noise, brown noise or binaural beats. Use SoundDrown to quickly drown out annoying noises, friends, co-workers, family, or anything else.",
+			"manifestLink": "https://sounddrown.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Trackybara",
+			"link": "https://www.trackybara.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544560359939-trackybara-appIcon.png",
+			"description": "To-do app meets large rodent. Stay on track to complete tasks with your friendly neighborhood capybara.",
+			"manifestLink": "https://www.trackybara.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Level",
+			"link": "https://spiritlevel.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545060582405-level-android-icon-512x512.png",
+			"description": "A spirit level in web app form.",
+			"manifestLink": "https://spiritlevel.app/icons/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Prt Mny",
+			"link": "https://prt-mny.amxmln.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536093601283-prtmny-android-chrome-512x512.png",
+			"description": "A wallet-content manager and expense tracker.",
+			"manifestLink": "https://prt-mny.amxmln.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "tomato timer",
+			"link": "https://tomatotimer.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539930737109-tomatotimer-android-chrome-512x512.png",
+			"description": "PWA focus timer you can control from your lock screen.",
+			"manifestLink": "https://tomatotimer.app/esm-bundled/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Squoosh",
+			"link": "https://squoosh.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1542050601843-squoosh-icon-large.png",
+			"description": "Compress and compare images with different codecs, right in your browser.",
+			"manifestLink": "https://squoosh.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Redberry",
+			"link": "https://berry.red",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1561660355830-redberry-android-chrome-512x512.png",
+			"description": "Collect your thoughts with this minimalist, but powerful Notes / To-Do app. Features include offline support, infinite nesting, search, and sync between devices.",
+			"manifestLink": "https://berry.red/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "NoteRiot",
+			"link": "https://note.riot.ai/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539234721738-noteriot-icon-512x512.png",
+			"description": "Private, encrypted note taking, built on Blockstack.",
+			"manifestLink": "https://note.riot.ai/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Listling",
+			"link": "https://listling.org/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1567547158098-listling-icon-large.png",
+			"description": "Service to make and edit lists collaboratively. Free, simple and no registration required.",
+			"manifestLink": "https://listling.org/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Passwrd",
+			"link": "https://passwrd.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545161362253-passwrd-512.png",
+			"description": "Passwrd is a simple, easy to use and fully configurable, strong password generator that creates excellent passwords that are hard to crack or guess.",
+			"manifestLink": "https://passwrd.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Color Breakdown",
+			"link": "https://notwoods.github.io/color-breakdown/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539421008807-colorbreakdown-logo512.png",
+			"description": "Extract prominent colors from an image to create more visually engaging designs and apps.",
+			"manifestLink": "https://notwoods.github.io/color-breakdown/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Habit Loop",
+			"link": "https://habit-loop.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536300036840-habitloop-firefox-marketplace-512-512.png",
+			"description": "Get in to the habit. Plan and track your habits.",
+			"manifestLink": "https://habit-loop.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "photils",
+			"link": "https://dev.photils.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1547025101117-Icon-512.png",
+			"description": "Photils is a PWA that features many useful tools for amateur and professional photographers.",
+			"manifestLink": "https://dev.photils.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Hour Adder Upper",
+			"link": "https://houradderupper.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1567635215132-houradderupper-apple-touch-icon.png",
+			"description": "Spend just seconds adding up your hours!",
+			"manifestLink": "https://houradderupper.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Aurora",
+			"link": "https://aurora.lunarworks.co.uk/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537336753352-android-chrome-512x512.png",
+			"description": "Aurora is a colour swatch / theme maker Progressive Web App built by Lunar Works. It highlights some key PWA features such as saving to homescreen, offline access, IndexedDb storage and advanced caching strategies.",
+			"manifestLink": "https://aurora.lunarworks.co.uk/site.webmanifest?v=2bQM0YwArK",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Stopwatch",
+			"link": "https://apps.web-accessories.com/stopwatch/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1552221231470-stopwatchapp-512.png",
+			"description": "A simple stopwatch app (PWA).",
+			"manifestLink": "https://apps.web-accessories.com/stopwatch/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "The Weekr",
+			"link": "https://theweekr.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535983575225-theweekr-android-icon-192x192.png",
+			"description": "Improve your productivity with repetitive tasks.",
+			"manifestLink": "https://theweekr.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "SplitMe",
+			"link": "https://splitme.net/accounts",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688833683-splitme-192x192.png",
+			"description": "Use SplitMe to share group bills and make sure that everyone gets paid back. Split household bills with roommates, figure out costs for a group trip, remember when a friend spots you for lunch.",
+			"manifestLink": "https://splitme.net/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Wavemaker",
+			"link": "https://wavemaker.cards",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1549977411878-wavemaker-android-icon-192x192.png",
+			"description": "A cross platform App to help you plan and write your novel",
+			"manifestLink": "https://wavemaker.cards/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "ReadingLight",
+			"link": "https://readinglight.pwa.run",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1546545130430-readinglight-readinglight.png",
+			"description": "A tiny no-frills screen reading light progressive web app based on the WakeLock API.",
+			"manifestLink": "https://readinglight.pwa.run/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Colour Contrast Checker",
+			"link": "https://colourcontrast.cc",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545433022324-colourcontrastchecker-favicon-512x512.png",
+			"description": "Check the contrast between different colour combinations against WCAG standards.",
+			"manifestLink": "https://colourcontrast.cc/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "DeckDeckGo",
+			"link": "https://deckdeckgo.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544379060506-deckdeckgo-android-chrome-512x512.png",
+			"description": "Present and interact with your lightweight DeckDeckGo's presentation with its remote control. Swipe your slides, play and pause Youtube video, draw over and highlight elements of your deck or use the presentation timer to countdown the remaining time of your talk. To edit and develop your own presentation, go to https://deckdeckgo.com",
+			"manifestLink": "https://deckdeckgo.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tudú",
+			"link": "https://erwinandres.github.io/tudu/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688921810-tud-android-chrome-192x192.png?v=2",
+			"description": "A lightweight TO-DO List progressive web app.",
+			"manifestLink": "https://erwinandres.github.io/tudu/manifest.json?v=2",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Unitrack",
+			"link": "https://getunitrack.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536751126861-unitrack-logo-512.png",
+			"description": "Dead simple package tracking for FedEx, OnTrac, UPS, and USPS.",
+			"manifestLink": "https://getunitrack.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Backgammon Clock",
+			"link": "https://hkitago.github.io/bgclockapp/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1534925771583-backgammonclock-icon-512x512.png",
+			"description": "Clock and timer app for backgammon.",
+			"manifestLink": "https://hkitago.github.io/bgclockapp/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PollMe",
+			"link": "https://poll-me.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536325387818-pollme-android-chrome-512x512.png",
+			"description": "The best application for get the information you need for any kind of people.",
+			"manifestLink": "https://poll-me.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Encounters",
+			"link": "https://encounters.heromuster.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548960952817-encounters-firefox-marketplace-512-512.png",
+			"description": "Roleplaying GM Tool: Add NPCs, build encounters, and run your game. Supports multiple RPG systems and languages.",
+			"manifestLink": "https://encounters.heromuster.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tip Calculator",
+			"link": "https://tips.jasonlbeggs.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540836227543-tipcalculator-android-chrome-512x512.png",
+			"description": "Just a simple tip calculator.",
+			"manifestLink": "https://tips.jasonlbeggs.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Thyme",
+			"link": "https://usethyme.com/thyme/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1541859979126-thyme-icon-512x512.png",
+			"description": "Dead simple time logging.",
+			"manifestLink": "https://usethyme.com/thyme/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Vrixe",
+			"link": "https://vrixe.com/app/pwa.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536580283703-vrixe-vlogreq.png",
+			"description": "Co-edit and Plan your Events with friends on Vrixe ...all your group plans in one web-app.",
+			"manifestLink": "https://vrixe.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Collecto",
+			"link": "https://www.collecto.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1546867379513-Collecto_Logo.png",
+			"description": "Collecto is a very quick and easy to use tool that manages all kind of collections (DVD, books, CD, etc). With Collecto, organizing, filing and tracking your collections has never been easier!",
+			"manifestLink": "https://www.collecto.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Splittypie",
+			"link": "https://splittypie.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688904077-splittypieeasyexpensesplitting-icon-192x192.png",
+			"description": "SplittyPie is a free app that helps you with sharing expenses with your friends. It's offline enable and mobile friendly, you can use it everywhere.",
+			"manifestLink": "https://splittypie.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "QR Code Scanner",
+			"link": "https://qrcodescan.in/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688756396-qrcodescanner-android-chrome-512x512.png",
+			"description": "QR code scanner progressive web application",
+			"manifestLink": "https://qrcodescan.in/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Truecaller",
+			"link": "https://www.truecaller.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688814023-truecaller-icon-192x192.png",
+			"description": "Truecaller is transforming today’s phonebook to make it more intelligent and useful.",
+			"manifestLink": "https://www.truecaller.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "QR Code Generator",
+			"link": "https://www.the-qrcode-generator.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536300038230-qrcodegenerator-icon192.png",
+			"description": "Free Online QR Code Generator to make your own QR Codes.",
+			"manifestLink": "https://www.the-qrcode-generator.com/assets/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Interval Timer",
+			"link": "https://salvacam.js.org/intervalTimer/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540115734758-intervaltimer-icon-512x512.png",
+			"description": "A simple interval timer PWA.",
+			"manifestLink": "https://salvacam.js.org/intervalTimer/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Zpeed",
+			"link": "https://www.zpeed.in/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688948631-zpeed-Zpeed_192.png",
+			"description": "Check your real-time speed in km/h. No installation needed. Use it right away!",
+			"manifestLink": "https://www.zpeed.in/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Remote for Slides",
+			"link": "https://slides.limhenry.xyz/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688908429-remoteforslides-icon_192.png",
+			"description": "Remote for Slides is a Chrome Extension and a Progressive Web App that allows you to control Google Slides and Ludus on any device, remotely, without the need for any extra hardware.",
+			"manifestLink": "https://slides.limhenry.xyz/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Secure Wallet",
+			"link": "https://gauravchl.github.io/secure-wallet/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535983579553-securewallet-android-chrome-512x512.png",
+			"description": "A PWA for password manager. Works offline, no server, no database, uses local storage to store all data, built with react + redux + webpack.",
+			"manifestLink": "https://gauravchl.github.io/secure-wallet/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Takt",
+			"link": "https://sii.im/playground/takt/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688775004-takt-favicon-196x196.png",
+			"description": "Time tracking.",
+			"manifestLink": "https://sii.im/playground/takt/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Passwort-Generator",
+			"link": "https://passwort.software-schiek.de",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557439209263-passwortgenerator-android-chrome-512x512.png",
+			"description": "Es lassen sich blitzschnell zufällige Passwörter mit verschiedenen Optionen erstellen.",
+			"manifestLink": "https://passwort.software-schiek.de/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Twitter WEB",
+			"link": "https://mobile.twitter.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543586571055-twitterlite-icon-default.604e2486a34a2f6e.png",
+			"description": "It's what's happening. From breaking news and entertainment, sports and politics, to big events and everyday interests.",
+			"manifestLink": "https://mobile.twitter.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Telegram WEB",
+			"link": "https://web.telegram.org/z/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688808253-telegram-icon192.png",
+			"description": "Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 100 million active users in two and a half years.",
+			"manifestLink": "https://web.telegram.org/z/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Pinterest",
+			"link": "https://www.pinterest.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688842123-pinterest-favicon_red_192.png",
+			"description": "Discover recipes, home ideas, style inspiration and other ideas to try.",
+			"manifestLink": "https://www.pinterest.com/manifest.json/?_ngjs=1",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Paper Planes",
+			"link": "https://paperplanes.world/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688779654-paperplanes-apple-touch-icon-180x180.png",
+			"description": "Catch and throw Paper Planes with one another around the world.",
+			"manifestLink": "https://paperplanes.world/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "AnonAce",
+			"link": "https://anonace.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548370083666-anonace-logo-512x512.png",
+			"description": "Read your favorite authors, influencers and brands, follow your interests by topics and hashtags. Free. Anonymously. Securely. No sign-up. No ads.",
+			"manifestLink": "https://anonace.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Morphistic",
+			"link": "https://www.morphistic.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557740803170-morphistic-android-chrome-512x512.png",
+			"description": "Vector collage art exchange",
+			"manifestLink": "https://morphistic.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "emberclear",
+			"link": "https://emberclear.io",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545945399139-emberclear-android-chrome-512x512-b8854c7b3eae5fec5de5ccb0218dc301.png",
+			"description": "Privacy First Encrypted Chat: No History. No Logs.",
+			"manifestLink": "https://emberclear.io/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Rhittm",
+			"link": "https://rhittm.netlify.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1550355844441-cat.svg",
+			"description": "Rhittm – your posts are always on time.",
+			"manifestLink": "https://rhittm.netlify.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "idgo.me",
+			"link": "https://idgo.me",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1550331681783-idgome-android-icon-512x512.png",
+			"description": "Your Local Community. Ask and Explore.",
+			"manifestLink": "https://idgo.me/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Pinafore",
+			"link": "https://pinafore.social/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536325391211-pinafore-icon-512.png",
+			"description": "Alternative web client for Mastodon, focused on speed and simplicity.",
+			"manifestLink": "https://pinafore.social/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Financial Times",
+			"link": "https://app.ft.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688923650-financialtimes-xxhdpi.png?v2",
+			"description": "The latest UK and international business, finance, economic and political news, comment and analysis from the Financial Times optimised for your device on app.ft.com.",
+			"manifestLink": "https://app.ft.com/metatags.json?v=3",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Umbrella",
+			"link": "https://roneetkumar.github.io/umbrella/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688928575-umbrella-favicon.ico",
+			"description": "Umbrella is a beautifuly designed Progressive Web Application for Weather Information.",
+			"manifestLink": "https://roneetkumar.github.io/umbrella/functions/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Shoppinglist",
+			"link": "https://shoppinglist.schmuckli.dev/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557551875371-shoppinglist-android-icon-192x192.png",
+			"description": "Create shoppinglists with this app.",
+			"manifestLink": "https://shoppinglist.schmuckli.dev/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Starbucks",
+			"link": "https://app.starbucks.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688876134-starbucks-pwa-icon-192.png",
+			"description": "Join Starbucks Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.",
+			"manifestLink": "https://app.starbucks.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Barcode Scanner",
+			"link": "https://pwascanit.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548021502119-barcodescanner-icon_512x512.png",
+			"description": "Information about food from the barcode, on your phone.",
+			"manifestLink": "https://pwascanit.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Recipe Sage",
+			"link": "https://recipesage.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1548535670631-recipesage-android-chrome-512x512.png",
+			"description": "Personal recipe keeper and manager. Share recipes, grocery lists, and meal plans.",
+			"manifestLink": "https://recipesage.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Menu in Pictures",
+			"link": "https://menuinpictures.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557433882110-menuinpictures-android-chrome-512x512.png",
+			"description": "A crowdsourced map for restaurants/cafes/bars/bakeries menus and prices list",
+			"manifestLink": "https://menuinpictures.com/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "BMI Calculator",
+			"link": "https://www-jvktpeglfs.now.sh/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537419972890-bmicalculator-icon.png",
+			"description": "Body mass indicator calculator. Calculates changes in your BMI.",
+			"manifestLink": "https://www-jvktpeglfs.now.sh/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Care Cards",
+			"link": "https://carecards.io/cards",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688986186-carecards-icon-512x512.png",
+			"description": "We all get a little overwhelmed from time to time. Care Cards is a set of helpful little tips to keep you on top of your mental wellbeing.",
+			"manifestLink": "https://carecards.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Craft Cards",
+			"link": "https://www.craft.cards",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1566544678841-craftcards-512x512.png",
+			"description": "All the fun of the internet wrapped in a digital greeting card.",
+			"manifestLink": "https://www.craft.cards/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "HappyPlants",
+			"link": "https://happyplants.garden/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532689001200-happyplants-logo-hdpi-288x288.png",
+			"description": "HappyPlants aims to help you organising and keeping track of your plants.",
+			"manifestLink": "https://happyplants.garden/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "tinythoughts",
+			"link": "https://tinythoughts.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532689007500-tinythoughts-android-chrome-512x512.png",
+			"description": "tinythoughts is a one sentence a day journal. Every day, write one line about your travel, milestones, mood, health, ideas, gratitude, children, dreams or goals.",
+			"manifestLink": "https://tinythoughts.me/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Smart Azan Clock",
+			"link": "https://smartazanclock.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1546261968991-smartazanclock-apple-touch-icon-512x512.png",
+			"description": "Smart Azan Clock is an online adhan clock that displays Muslim Prayer Times on a 24 hour clock. ",
+			"manifestLink": "https://smartazanclock.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Reboot",
+			"link": "https://reboot.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532689005331-reboot-apple-touch-icon-152x152.png",
+			"description": "Take small breaks from your work and re-energize yourself by doing nothing for some time.",
+			"manifestLink": "https://reboot.netlify.com/static/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Fluster",
+			"link": "https://m.fluster.io/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1538544878816-fluster-android-chrome-512x512.png",
+			"description": "Roommates next door.",
+			"manifestLink": "https://m.fluster.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "ColorBlindSim",
+			"link": "https://www.colorblindsim.com/#app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688896326-colorblindsim-android-chrome-192x192.d68943c1.png",
+			"description": "A real-time color blindness simulator app.",
+			"manifestLink": "https://www.colorblindsim.com/manifest.8b7a3d31.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Coinranking",
+			"link": "https://coinranking.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535358295264-coinranking-icon_512x512.png",
+			"description": "Cryptocurrency prices at a glance.",
+			"manifestLink": "https://coinranking.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Money Tracker",
+			"link": "https://app.moneytracker.cc/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539694754370-moneytracker-favicon-192.png",
+			"description": "Money Tracker is an open-source progressive web app that allows you to track your income and expenses.",
+			"manifestLink": "https://app.moneytracker.cc/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Coinhodler",
+			"link": "https://coinhodler.io/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539506106017-coinhodler-icon_192x192.png",
+			"description": "Create a cryptocurrency portfolio within seconds. It’s anonymous, syncs across devices, and supports thousands of coins.",
+			"manifestLink": "https://coinhodler.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Minizare",
+			"link": "https://abdulhamidoumer.github.io/Minizare/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540480338694-minizare-logo.png",
+			"description": "Minizare is an open source currency converter web app powered by the free currency converter API. Currently Minizare supports about 156 currencies and 201 countries internationally.",
+			"manifestLink": "https://abdulhamidoumer.github.io/Minizare/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Warehouse Rating",
+			"link": "https://warehouserating.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1556517686122-icon.png",
+			"description": "Truck drivers come here to save time by knowing what to expect of the business they are delivering to and from. Details such as the load-time, overnight parking availability, the presence of a gate and more are shared here.",
+			"manifestLink": "https://warehouserating.com/_nuxt/manifest.49f8eae4.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Bitcoinverter",
+			"link": "https://bitcoinverter.herokuapp.com/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540480337507-bitcoinverter-icon-256x256.png",
+			"description": "A simple currency converter for Bitcoin",
+			"manifestLink": "https://bitcoinverter.herokuapp.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Bx Bookkeeping",
+			"link": "https://usebx.com/app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688913791-bxbookkeeping-Bx256.png",
+			"description": "Super simple invoicing, projects and expenses for growing businesses.",
+			"manifestLink": "https://usebx.com/web/script/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PWA React Music Player",
+			"link": "https://playlist.iondrimbafilho.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1551221899701-pwareactmusicplayer-android-chrome-512x512.png",
+			"description": "ReactJS Music Player based on Soundcloud API",
+			"manifestLink": "https://playlist.iondrimbafilho.me/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "MusicKit",
+			"link": "https://musickit.jull.dev/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1566976336206-musickit-android-chrome-512x512.png",
+			"description": "Metronome, Tuner and Tone Generator",
+			"manifestLink": "https://musickit.jull.dev/manifest.json?v=1",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Lyricfy",
+			"link": "https://beta-lyricfy.surge.sh/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688951091-lyricfy-android-chrome-256x256.png?v=vMOxlOb22v",
+			"description": "Lyrics for Spotify. Sign in with your Spotify account and the app will automatically show you lyrics for the current song.",
+			"manifestLink": "https://beta-lyricfy.surge.sh/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "1tuner",
+			"link": "https://1tuner.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1587199172360-1tuner-icon-512x512-maskable.png",
+			"description": "1 web app to listen to online radio.",
+			"manifestLink": "https://1tuner.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Yhimsical",
+			"link": "https://yhimsical.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544806959752-yhimsical-android-chrome-512x512.png",
+			"description": "A Drag n Drop Youtube Music Player with Powerful Features.",
+			"manifestLink": "https://yhimsical.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Song Search",
+			"link": "https://songsear.ch/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543782610088-songsearch-android-chrome-512x512.png",
+			"description": "Find songs by lyrics.",
+			"manifestLink": "https://songsear.ch/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tuner Ninja",
+			"link": "https://tuner.ninja/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688984070-tunerninja-tuner_ninja_192.png",
+			"description": "Free online instrument tuner. Tune your guitar, ukulele, violin or any other instrument. Get in tune easily and accurately without installing anything.",
+			"manifestLink": "https://tuner.ninja/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "BitMidi",
+			"link": "https://bitmidi.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688990640-bitmidi-android-chrome-192x192.png",
+			"description": "Wayback machine for old-school MIDI files",
+			"manifestLink": "https://bitmidi.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Flat",
+			"link": "https://flat.io/auth?utm_source=flat&utm_medium=pwa&utm_campaign=flat-homescreen",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688966021-flat-logo-f-196.png",
+			"description": "Discover the most weekly popular music scores and guitar tabs created using the collaborative music notation software Flat.",
+			"manifestLink": "https://flat.io/manifest.json?v1",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "AxlMetronome",
+			"link": "https://axl-metronome.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1551815594085-axlmetronome-icon-512x512.png",
+			"description": "A metronome that increases/decreases tempo automatically. Stable tempo as usual is also supported of course.",
+			"manifestLink": "https://axl-metronome.netlify.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Xylo",
+			"link": "https://playxylo.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688867083-xylo-icon-192.png",
+			"description": "A simple digital xylophone.",
+			"manifestLink": "https://playxylo.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "EPOH Music",
+			"link": "https://epoh.ng/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536580282441-epohmusic-512x512.png",
+			"description": "Discover Nigerian music.",
+			"manifestLink": "https://epoh.ng/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Best Festival",
+			"link": "https://bestfestivalfor.me/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536093600134-bestfestival-android-icon-192x192.png",
+			"description": "Compare the bands and artists you follow with over 1000 festivals all over the world to find the one that matches you perfectly.",
+			"manifestLink": "https://bestfestivalfor.me/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "High Tide",
+			"link": "https://hightide.earth/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688911143-hightide-android-chrome-192x192-b76415d8584f5c24ed4e45132b2cce42.png",
+			"description": "Quickly find tides on your phone.",
+			"manifestLink": "https://hightide.earth/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Wikihoops",
+			"link": "https://wikihoops.com/?webApp=1",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540723040348-wikihoops-icon-v2-512x512.png",
+			"description": "Spoiler-Free NBA Scores, Recaps & Schedule.",
+			"manifestLink": "https://wikihoops.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Soccer Coachaide",
+			"link": "https://soccer.coachaide.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1542785345645-soccercoachaide-coachaide-logo-512.png",
+			"description": "Coach Aide is a simple tactic board for soccer coaches that works both online and offline, and equally well on mobile, tablet, laptop and desktop, and is absolutely free to use.",
+			"manifestLink": "https://soccer.coachaide.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PaceBud",
+			"link": "https://pacebud.netlify.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540067982860-pacebud-android-chrome-512x512.png",
+			"description": "PaceBud is a lighweight PWA Pace Calculator for Runners.",
+			"manifestLink": "https://pacebud.netlify.com/site.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Atom",
+			"link": "https://atom.horuslugo.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536211717413-atom-logo_atom-512x512.png",
+			"description": "Learn the basics of chemistry doing the tests and using the periodic table.",
+			"manifestLink": "https://atom.horuslugo.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Flashcards.io",
+			"link": "https://flashcards.io/app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1549949206724-icon.png",
+			"description": "Study smarter with flash cards",
+			"manifestLink": "https://flashcards.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Elements",
+			"link": "https://periodic-table.io/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536935944244-android-chrome-512x512.png",
+			"description": "Elements: The Periodic Table is a Progressive Web App (PWA) and provides comprehensive and useful information about the chemical elements all in one place. Know more about the properties, history, name origin, images, applications, hazards and electron shell diagram of each element.",
+			"manifestLink": "https://periodic-table.io/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "SAGE",
+			"link": "https://sage.cards/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535798844848-sage-android-chrome-512x512.png",
+			"description": "SAGE is an educational vocabulary game.",
+			"manifestLink": "https://sage.cards/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Spanish Word Gender",
+			"link": "https://juan-antonio-ledesma.github.io/spanish-word-gender/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544806961087-spanishwordgender-swg-512.png",
+			"description": "Choose the correct gender of the word.",
+			"manifestLink": "https://juan-antonio-ledesma.github.io/spanish-word-gender/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Olacabs",
+			"link": "https://book.olacabs.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535798848530-olacabs-img_logomark@512.png",
+			"description": "Now book city taxi, share, rental and outstation directly from web.",
+			"manifestLink": "https://book.olacabs.com/en-in/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Wallet",
+			"link": "https://wallet.schmuckli.dev/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1554713788523-wallet-android-icon-192x192.png",
+			"description": "Save your passes and tickets easily and secure in a backed up wallet.",
+			"manifestLink": "https://wallet.schmuckli.dev/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Mappy",
+			"link": "https://fr.mappy.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532906173344-mappy-icon.png",
+			"description": "Recherche d'adresses, de lieux, comparateur d'itinéraires pour préparer vos déplacements partout en France.",
+			"manifestLink": "https://fr.mappy.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Waka",
+			"link": "https://waka.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1549271348409-waka-splash-4x.png",
+			"description": "Your realtime guide to public transport in Auckland and Wellington.",
+			"manifestLink": "https://waka.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Tilt",
+			"link": "https://app.tilt.bike",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544909732843-tilt-android-512x512.png",
+			"description": "Tilt is a pool of shareable bikes that are great fun and easy to use. Our bikes are in cities, corporate campuses and townships across India.",
+			"manifestLink": "https://app.tilt.bike/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Trivago",
+			"link": "https://trivago.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688811564-trivago-apple-touch-icon.png",
+			"description": "Every month 120+ million visitors use trivago to search & compare hotel prices, read reviews & browse photos. Find your ideal hotel deal on trivago.com",
+			"manifestLink": "https://trivago.com/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PayByPhone",
+			"link": "https://m2.paybyphone.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536325393276-paybyphone-homescreen512.png",
+			"description": "The market leading pay by phone payment operator for parking, brings you the simple, secure and convenient way to pay for your parking.",
+			"manifestLink": "https://m2.paybyphone.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Google Santa Tracker",
+			"link": "https://santatracker.google.com/?utm_source=web_app_manifest&utm_medium=web_app_manifest",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543498423433-googlesantatracker-icon-256.png",
+			"description": "Use Google Santa Tracker to follow Santa Claus on Google Maps as he makes his journey around the world.",
+			"manifestLink": "https://santatracker.google.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "9GAG",
+			"link": "https://9gag.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688937512-9gag-launcher-icon-192.png",
+			"description": "9GAG has the best funny pics, gifs, videos, gaming, anime, manga, movie, tv, cosplay, sport, food, memes, cute, fail, wtf photos on the internet!",
+			"manifestLink": "https://9gag.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Background Noise",
+			"link": "https://backgroundnoise.app",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1560849503523-backgroundnoise-icon-512x512.png",
+			"description": "A simple white noise app that plays in the background.",
+			"manifestLink": "https://backgroundnoise.app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Marvel API Explorer",
+			"link": "https://marvelapi.iondrimbafilho.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557694498926-icon-512x512.png",
+			"description": "PWA to explore Marvels API",
+			"manifestLink": "https://marvelapi.iondrimbafilho.me/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "English Accents Map",
+			"link": "https://www.englishaccentsmap.com/?utm_source=web_app_manifest",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536040509091-englishaccentsmap-android-chrome-512x512.png",
+			"description": "Watch videos of the English accents spoken around the world.",
+			"manifestLink": "https://www.englishaccentsmap.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Random Picker",
+			"link": "https://random.jasonlbeggs.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1540568399497-randompicker-android-chrome-512x512.png",
+			"description": "Why make difficult decisions when this app can do it for you?",
+			"manifestLink": "https://random.jasonlbeggs.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Gifster",
+			"link": "https://gif-fer.firebaseapp.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1545226298675-gifster-android-chrome-512x512.png",
+			"description": "Express exactly what you feel exactly when you want to!",
+			"manifestLink": "https://gif-fer.firebaseapp.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "War of the Worlds Broadcast",
+			"link": "https://waroftheworldsbroadcast.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1539421002954-waroftheworldsbroadcast-icon-512x512.png",
+			"description": "In 1938, Martians were real. Relive the night of October the 30th with War of the Worlds Broadcast.",
+			"manifestLink": "https://waroftheworldsbroadcast.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Colordinates",
+			"link": "https://plfstr.github.io/colordinates/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544124338189-colordinates-webclip-512x512.png",
+			"description": "Where the hue are you? Get a color value based on your location on the Earth.",
+			"manifestLink": "https://plfstr.github.io/colordinates/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Geogee!",
+			"link": "https://geogee.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544806956377-geogee-icon.png",
+			"description": "Super fun countries game!",
+			"manifestLink": "https://geogee.me/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "closerintime",
+			"link": "https://closerinti.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536646701290-closerintime-android-icon-512x512.png",
+			"description": "Timespan comparisons between historical events.",
+			"manifestLink": "https://closerinti.me/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Interst8",
+			"link": "https://interst8.us/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536953412810-interst8-logo-512.png",
+			"description": "Curated collection of word riddles using U.S. state abbreviations. Created by puzzle author David Millar.",
+			"manifestLink": "https://interst8.us/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "I Don't Like Work",
+			"link": "https://idontlike.work/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536903886218-idontlikework-512.png",
+			"description": "We believe working from home is productive for many reasons. Don’t even spend time thinking for a reason to send your boss/team. I Don’t Like Work is here to improve your productivity by saving your thinking time.",
+			"manifestLink": "https://idontlike.work/static/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "WeatherApp",
+			"link": "https://murillo94.github.io/weather-pwa/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1544414084182-icon_512x512.png",
+			"description": "Find out the current weather forecast in any city around the world.",
+			"manifestLink": "https://murillo94.github.io/weather-pwa/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "React Weather",
+			"link": "https://weather.iondrimbafilho.me/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543961697934-reactweather-icon-512x512.png",
+			"description": "PWA React Weather App.",
+			"manifestLink": "https://weather.iondrimbafilho.me/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Will Rain Today",
+			"link": "https://willrain.today/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536687607192-launcher-icon-512.png",
+			"description": "Minimal Weather PWA.",
+			"manifestLink": "https://willrain.today/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Picular",
+			"link": "https://picular.co/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1535358293236-picular-homescreen192.07ddd369.png",
+			"description": "Google, but for colors.",
+			"manifestLink": "https://picular.co/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Quiet Weather",
+			"link": "https://slimekat.github.io/quiet-weather/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1550060082290-quietweather-android-chrome-512x512.png",
+			"description": "A simple and straightforward to check local weather as well as weather in almost any city worldwide!",
+			"manifestLink": "https://slimekat.github.io/quiet-weather/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Breethe",
+			"link": "https://breethe.app/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536580284794-breethe-512x512.png",
+			"description": "Air Quality Data for Locations around the World.",
+			"manifestLink": "https://breethe.app/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Quotery",
+			"link": "https://www.quotery.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1536395183402-quotery-favicon-512.png",
+			"description": "Thought-provoking web app that encourages users to explore, collect, and share their favorite quotes.",
+			"manifestLink": "https://static.quotery.com/misc/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Bible.rs",
+			"link": "https://bible.rs/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1549219286087-biblers.svg",
+			"description": "Browse and search the King James version of the Bible using a lightning-fast and slick interface.",
+			"manifestLink": "https://bible.rs/static/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Star Wars Guide",
+			"link": "https://maxjf1.github.io/star-wars-app/index.html",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1537990317834-starwars-android-icon-192x192.png",
+			"description": "A character guide for Star Wars.",
+			"manifestLink": "https://maxjf1.github.io/star-wars-app/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Is there Uber In?",
+			"link": "https://isthereuber.in/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1543961696252-isthereuberin-android-chrome-512x512.png",
+			"description": "Check if Uber exists in a given city.",
+			"manifestLink": "https://isthereuber.in/icons-c296735b90eaa0770a8d38e7575e7ad5/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Indecisive",
+			"link": "https://indecisive.us/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1542495871759-indecisive-icon-512x512.png",
+			"description": "App to help you make a decision.",
+			"manifestLink": "https://indecisive.us/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Waqt",
+			"link": "https://waqt-web.netlify.com",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1557158495583-waqt-android-chrome-512x512.png",
+			"description": "View Islamic prayer times for your location",
+			"manifestLink": "https://waqt-web.netlify.app/manifest.webmanifest",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "PWA Stats",
+			"link": "https://www.pwastats.com/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688906365-pwastats-android-chrome-192x192.png",
+			"description": "A collection of Progressive Web App case studies.",
+			"manifestLink": "https://www.pwastats.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		},
+		{
+			"name": "Magic Web",
+			"link": "https://soyguijarro.github.io/magic-web/",
+			"icon": "https://d3frsattnbx5l6.cloudfront.net/1532688838783-magicweb-favicon.ico",
+			"description": "Discover all the amazing things your browser can do.",
+			"manifestLink": "https://soyguijarro.github.io/magic-web/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		}
+	]
+}
