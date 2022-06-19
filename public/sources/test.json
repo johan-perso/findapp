@@ -1,0 +1,29 @@
+{
+	"name": "Exemple",
+	"apps": [
+		{
+			"name": "Twitter",
+			"packageName": "com.twitter.android",
+			"icon": "https://image.winudf.com/v2/image1/Y29tLnR3aXR0ZXIuYW5kcm9pZF9pY29uXzE1NTU0NjI4MTJfMDI2/icon.png?w=512&fakeurl=1",
+			"description": "Rejoignez la conversation !",
+			"type": "native",
+			"links": [
+				{
+					"name": "APKPure",
+					"apkLink": "https://apkpure.com/fr/twitter/com.twitter.android/download?from=details",
+					"platformLink": "https://apkpure.com/fr/twitter/com.twitter.android"
+				}
+			]
+		},
+		{
+			"name": "Rickdetect",
+			"link": "https://rickdetect.johanstickman.com/",
+			"icon": "https://rickdetect.johanstickman.com/favicon.png",
+			"description": "Détecter des rick rolls, juste à partir d'un lien.",
+			"manifestLink": "https://rickdetect.johanstickman.com/manifest.json",
+			"connectivityType": "worksOffline",
+			"type": "pwa"
+		}
+	]
+}
+
