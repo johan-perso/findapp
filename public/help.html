@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="bg-base-200" data-theme="dark">
+<head>
+	<!-- Quelques trucs -->
+	<title>FindApp</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#6200ee">
+
+	<!-- Favicons -->
+	<link href="/favicon.png" rel="icon">
+	<link href="/favicon.png" rel="apple-touch-icon">
+
+	<!-- Importer des polices d'écriture (Roboto, Product Sans et Material icons) -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+	<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/css/product-sans-500-all.css">
+
+	<!-- Quelques scripts/libs -->
+	<script src="/script/replaceLinkInPWA.js"></script>
+	<script src="/script/importSW.js"></script>
+	<link href="/style.css" rel="stylesheet">
+ 
+	<!-- Importer les composants Material Web -->
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+	<!-- Meta tag pour les réseaux -->
+	<meta property="og:title" content="FindApp">
+	<meta property="og:description" content="Trouver une application, parmis plusieurs stores d'applications.">
+</head>
+<body>
+	<!-- Top bar de l'application -->
+	<header class="mdc-top-app-bar mdc-top-app-bar--fixed top-0">
+	    <div class="mdc-top-app-bar__row">
+			<!-- Titre -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+	            <a class="mdc-top-app-bar__title cursor-pointer" href="/" style="font-family: Product Sans;">FindApp</a>
+	        </section>
+
+			<!-- Liste des boutons -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="source" aria-label="Gestion des sources">shop_2</a>
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="help" aria-label="Page d'aide">help</a>
+	        </section>
+	    </div>
+	</header>
+
+	<!-- Partie principale -->
+	<div style="margin-top: 4.2rem;" class="px-6 py-4 space-y-2">
+		<!-- Titre : Quésaco ? -->
+		<div>
+			<h1 style="font-size: 32px; letter-spacing: -1.25px; color: #ced4da; font-weight: 600;">Quésaco ?</h1>
+			<p>FindApp vous permet de trouver l'application que vous recherchez parmis plusieurs sources, que la communeauté peut créer. FindApp offre également 2 sources actives par défaut (avec environ 300 PWAs et 42400 applications natives).</p>
+		</div>
+
+		<!-- Titre : Version -->
+		<div>
+			<h1 style="font-size: 32px; letter-spacing: -1.25px; color: #ced4da; font-weight: 600;">Version</h1>
+			<p>La version la plus récente de FindApp est la version <code id="usedVersion" class="bg-gray-700 rounded-md p-1">.....</code>.</p>
+		</div>
+
+		<!-- Titre : Comment ça marche ? -->
+		<div>
+			<h1 style="font-size: 32px; letter-spacing: -1.25px; color: #ced4da; font-weight: 600;">Comment ça marche ?</h1>
+			<p>
+				Lorsque vous faites une recherche, l'ensemble des applications de toutes les sources que vous avez ajoutés seront analysés afin de trouver les applications que vous souhaiter.
+				<br>Pour obtenir des informations sur comment marche une source, rendez-vous sur la page de <a class="text-blue-400" href="/source">gestion des sources</a>.
+			</p>
+		</div>
+
+		<!-- Titre : Recherche avancé -->
+		<div>
+			<h1 style="font-size: 32px; letter-spacing: -1.25px; color: #ced4da; font-weight: 600;">Recherche avancé</h1>
+			<p>Il est possible d'utiliser certains termes de recherches afin de rendre les résultats plus précis.</p>
+			<div class="mt-4 mdc-data-table w-full" style="border: none; background-color: transparent;">
+				<div class="mdc-data-table__table-container rounded-md">
+					<table style="background-color: #495057; color: #ced4da;" class="mdc-data-table__table">
+						<thead>
+							<tr class="mdc-data-table__header-row">
+								<th class="mdc-data-table__header-cell" style="background-color: #212529; color:#ced4da;" role="columnheader" scope="col">Element</th>
+								<th class="mdc-data-table__header-cell" style="background-color: #212529; color:#ced4da;" role="columnheader" scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody class="mdc-data-table__content">
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">=name</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Application dont le nom est exacte à <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">^name</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui commencent par <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">!^name</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui ne commencent pas par <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">'name</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui contiennent <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">!name</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui ne contiennent pas <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">name$</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui finissent par <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">!name$</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Applications qui ne finissent pas par <code class="bg-gray-700 rounded-md p-1">name</code></td>
+							</tr>
+
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">_all</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Toutes les applications, ne prend pas en compte le terme à rechercher</td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">_random</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Toutes les applications, dans un ordre aléatoire</td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">_noIcons</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Toutes les applications n'ayant pas d'icônes</td>
+							</tr>
+							<tr class="mdc-data-table__row">
+								<th style="color: #dee2e6;" class="mdc-data-table__cell" scope="row"><code class="bg-gray-700 rounded-md p-1">_pwa</code></th>
+								<td style="color: #dee2e6;" class="mdc-data-table__cell">Toutes les PWAs (applications web)</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

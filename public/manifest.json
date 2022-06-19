@@ -1,0 +1,37 @@
+{
+    "theme_color": "#6200ee",
+    "background_color": "#2a2e37",
+    "display": "standalone",
+    "scope": "/",
+    "id": "/",
+    "start_url": "/",
+    "name": "FindApp",
+    "short_name": "FindApp",
+    "description": "Trouver une application, parmis plusieurs sources d'applications.",
+    "icons": [
+        {
+            "src": "/icons/rounded.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/icons/full.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+	],
+  "screenshots": [
+		{
+		  "src": "https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/search.png",
+		  "type": "image/png",
+		  "sizes": "1598x2740"
+		},
+		{
+		  "src": "https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/app.png",
+		  "type": "image/jpg",
+		  "sizes": "1598x2740"
+		}
+	]
+}

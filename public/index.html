@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="bg-base-200" data-theme="dark">
+<head>
+	<!-- Quelques trucs -->
+	<title>FindApp</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="theme-color" content="#6200ee">
+
+	<!-- Favicons -->
+	<link href="/favicon.png" rel="icon">
+	<link href="/favicon.png" rel="apple-touch-icon">
+
+	<!-- Importer des polices d'écriture (Roboto, Product Sans et Material icons) -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+	<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/css/product-sans-500-all.css">
+
+	<!-- Quelques scripts/libs -->
+	<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+	<script src="/script/replaceLinkInPWA.js"></script>
+	<script src="/script/main.js"></script>
+	<script src="/script/importSW.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/localForage/localForage@master/dist/localforage.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+	<link href="/style.css" rel="stylesheet">
+ 
+	<!-- Importer les composants Material Web -->
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+	<!-- Meta tag pour les réseaux -->
+	<meta property="og:title" content="FindApp">
+	<meta property="og:description" content="Trouver une application, parmis plusieurs stores d'applications.">
+</head>
+<body>
+	<!-- Top bar de l'application -->
+	<header class="mdc-top-app-bar mdc-top-app-bar--fixed top-0">
+		<!-- Barre de chargement progressif -->
+		<div id="loadingProgressContainer" class="w-full h-2 hidden" style="position: absolute; background-color: rgb(98, 0, 200);">
+			<div id="loadingProgress" class="bg-blue-800 h-2" style="width: 0%"></div>
+		</div>
+
+	    <div class="mdc-top-app-bar__row">
+			<!-- Titre -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+	            <a class="mdc-top-app-bar__title cursor-pointer" href="#home" style="font-family: Product Sans;">FindApp</a>
+	        </section>
+
+			<!-- Liste des boutons -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="source" aria-label="Gestion des sources">shop_2</a>
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="help" aria-label="Page d'aide">help</a>
+	        </section>
+	    </div>
+	</header>
+
+	<!-- Partie principale -->
+	<div style="margin-top: 4.75rem;" class="px-6">
+		<div class="form-control">
+			<!-- Input pour écrire un terme de recherche -->
+			<input onfocus="this.placeholder = ''" onfocusout="this.placeholder = 'Ecrivez ici pour effectuer une recherche'" id="searchTerm" type="text" class="input w-full text-center" placeholder="Ecrivez ici pour effectuer une recherche">
+
+			<!-- Bouton pour lancer la recherche -->
+			<button id="searchButton" class="mdc-button mdc-button--raised mt-2" onclick="window.location.hash = '#search-' + document.getElementById('searchTerm').value">
+				<span class="mdc-button__ripple"></span>
+				<span id="search_button_loadingIcon" class="material-icons animate-spin" style="display: none;">cached</span>
+				Rechercher
+			</button>
+		</div>
+	</div>
+
+	<!-- Liste des applications -->
+	<div id="appList_div" class="px-6 py-3 hidden">
+		<div class="p-4 bg-base-100 rounded-lg border shadow-md sm:p-8 border-base-300">
+			<div class="flex justify-between items-center mb-4">
+				<h3 id="text_searchResult" class="text-xl font-bold leading-none text-white">Résultats de recherche</h3>
+				<a id="text_reportSomething" href="javascript:void(0)" onclick="showReportForm()" class="text-sm font-medium hover:underline text-blue-500">
+					Il manque quelque chose ?
+				</a>
+			</div>
+			<div class="flow-root">
+				<ul id="appList" role="list"></ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Conteneur (vide, utilisé avec du JS) -->
+	<div id="app-container"></div>
+</body>
+</html>

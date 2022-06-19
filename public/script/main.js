@@ -67,7 +67,7 @@ window.onload = async function(){
 	// Si aucune source n'est présente, ajouter la liste par défaut
 	if(!localStorage.getItem('sources') || (localStorage.getItem('sources') && JSON.parse(localStorage.getItem('sources')) && !JSON.parse(localStorage.getItem('sources')).length)){
 		console.log('Ajout de la liste par défaut')
-		localStorage.setItem('sources', JSON.stringify([ 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/findapp-sources%2FnativesApps.json?alt=media', 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/findapp-sources%2Fpwa.json?alt=media' ]))
+		localStorage.setItem('sources', JSON.stringify([ 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/sources/pwa.json', 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/sources/nativesApps.json' ]))
 		mergeAllSources()
 	}
 
@@ -193,7 +193,7 @@ function generateCard(name, packageName, icon, platforms, forSkeleton=false){
 	var card = `<li class="py-3 sm:py-4%MORE_CLASS%"><div class="flex items-center space-x-4"><div class="flex-shrink-0">%ICON%</div><div class="flex-1 min-w-0 space-y-1" isCardTitle><p class="text-sm font-medium truncate text-white" id="cardName_${packageName}" isCardName>%NAME%</p><p class="text-sm truncate text-gray-400" id="cardPlatform_${packageName}" isCardPlatforms>%PLATFORMS%</p></div><div class="inline-flex items-center text-base font-semibold text-white" isCardButton>%BUTTON%</div></div></li>`
 
 	// Retourner la carte
-	if(!forSkeleton) return card.replace('%NAME%', escapeHTML(name)).replace('%PLATFORMS%', `Disponible sur ${formatter.format(platforms)}.`).replace('%BUTTON%', `<a isCardButton href="#app-${packageName}" class="mdc-button mdc-button--raised"><span class="mdc-button__ripple"></span><span class="mdc-button__label">Afficher</span></button>`).replace('%ICON%', `<img onerror="this.src = 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherImages%2FAPK_defaultIcon.png?alt=media'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${icon}" alt="">`).replace('%MORE_CLASS%', '');
+	if(!forSkeleton) return card.replace('%NAME%', escapeHTML(name)).replace('%PLATFORMS%', `Disponible sur ${formatter.format(platforms)}.`).replace('%BUTTON%', `<a isCardButton href="#app-${packageName}" class="mdc-button mdc-button--raised"><span class="mdc-button__ripple"></span><span class="mdc-button__label">Afficher</span></button>`).replace('%ICON%', `<img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${icon}" alt="">`).replace('%MORE_CLASS%', '');
 	if(forSkeleton) return card.replace('%NAME%', '<div class="animate-pulse bg-base-200 w-32 h-4"></div>').replace('%PLATFORMS%', '<div class="animate-pulse bg-base-200 w-64 h-4"></div>').replace('%BUTTON%', '').replace('%ICON%', '<div class="animate-pulse bg-base-200 rounded-full hover:rounded-2xl w-12 h-12"></div>').replace('%MORE_CLASS%', ' skeleton');
 }
 
@@ -262,7 +262,7 @@ async function showApp(packageName){
 		}
 
 	// Générer le code de la carte
-	var code = `<div id="appInfo" class="px-6 py-2"><div class="px-4 py-8 bg-base-100 rounded-lg border shadow-md sm:px-8 border-base-300"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img onerror="this.src = 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherImages%2FAPK_defaultIcon.png?alt=media'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${app.icon || 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherImages%2FAPK_defaultIcon.png?alt=media'}" alt=""></div><div class="flex-1 min-w-0"><p class="text-md font-medium truncate text-white">${escapeHTML(app.name)}</p><p class="text-sm text-gray-400" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(app.description) || 'Aucune description disponible'}</p></div></div><div class="mt-3"><p class="text-lg text-gray-400 font-bold mb-1">Informations :</p><ul class="list-inside list-none">${appDetails}</ul></div><div class="mt-2">${(app.links) ? '<p class="text-lg text-gray-400 font-bold mb-1">Télécharger via :</p>' : ''}<div>${buttons.join(' ')}</div></div></div></div>`
+	var code = `<div id="appInfo" class="px-6 py-2"><div class="px-4 py-8 bg-base-100 rounded-lg border shadow-md sm:px-8 border-base-300"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${app.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'}" alt=""></div><div class="flex-1 min-w-0"><p class="text-md font-medium truncate text-white">${escapeHTML(app.name)}</p><p class="text-sm text-gray-400" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(app.description) || 'Aucune description disponible'}</p></div></div><div class="mt-3"><p class="text-lg text-gray-400 font-bold mb-1">Informations :</p><ul class="list-inside list-none">${appDetails}</ul></div><div class="mt-2">${(app.links) ? '<p class="text-lg text-gray-400 font-bold mb-1">Télécharger via :</p>' : ''}<div>${buttons.join(' ')}</div></div></div></div>`
 
 	// Afficher l'application
 	document.getElementById('appList_div').classList.add('hidden')
@@ -428,7 +428,7 @@ async function searchApps(query){
 	// Pour chaque application
 	for(var app of results){
 		// Ajouter une carte
-		document.getElementById('appList').innerHTML += generateCard(app?.item?.name, app?.item?.packageName || app?.item?.link, app?.item?.icon || 'https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/otherImages%2FAPK_defaultIcon.png?alt=media', app?.item?.links);
+		document.getElementById('appList').innerHTML += generateCard(app?.item?.name, app?.item?.packageName || app?.item?.link, app?.item?.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png', app?.item?.links);
 
 		// Selon la taille d'écran
 		if(window.innerWidth < 470) document.getElementById(`cardPlatform_${app?.item?.packageName || app?.item?.link}`).innerText = app?.item?.description?.split('\n').join(' ') || 'Aucune description'
