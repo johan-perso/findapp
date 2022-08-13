@@ -9,6 +9,7 @@ async function updateCache(){
 			'https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js',
 			'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png',
 			'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/rounded.png',
+			'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/APK_defaultIcon.png',
 			'/',
 			'/help',
 			'/source',
