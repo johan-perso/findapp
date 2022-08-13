@@ -94,7 +94,7 @@ window.onload = async function(){
 
 			// Ajouter tout les élements
 			for(var i = 0; i < sources.length; i++){
-				document.getElementById('listSourcesTbody').insertAdjacentHTML('beforeend', `<tr sourceName="${encodeURIComponent(sources[i])}" class="mdc-data-table__row"><th width="50%" style="color: #dee2e6;" class="mdc-data-table__cell" scope="row">${escapeHTML(capitalizeFirstLetter((await fetchSource(sources[i])).name))}</th><td width="50%" style="color: #dee2e6;" class="mdc-data-table__cell sourceLink">${escapeHTML(sources[i])}</td><td nowrap style="color: #dee2e6;" class="mdc-data-table__cell"><button class="mdc-button mdc-button--raised" onclick="showSourceDetails(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Afficher</button>\n<button class="mdc-button mdc-button--raised" onclick="removeSource(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Supprimer</button></td></tr>`)
+				document.getElementById('listSourcesTbody').insertAdjacentHTML('beforeend', `<tr sourceName="${encodeURIComponent(sources[i])}" class="mdc-data-table__row"><th width="50%" style="color: #dee2e6;" class="mdc-data-table__cell" scope="row">${escapeHTML(capitalizeFirstLetter((await fetchSource(sources[i])).name))}</th><td width="50%" style="color: #dee2e6;" class="mdc-data-table__cell sourceLink">${escapeHTML(sources[i])}</td><td nowrap style="color: #dee2e6;" class="mdc-data-table__cell"><button class="mdc-button mdc-button--raised" onclick="showSourceDetails(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Afficher</button>\n<button class="mdc-button mdc-button--raised" onclick="navigator.share({ title: 'Source FindApp', url: '${location.origin}#addsource-${escapeHTML(sources[i])}' })"><span class="mdc-button__ripple"></span>Partager</button>\n<button class="mdc-button mdc-button--raised" onclick="removeSource(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Supprimer</button></td></tr>`)
 				document.getElementById('loadingProgress').style.width = ((i+1) / sources.length * 100) + '%'
 			}
 
@@ -145,6 +145,20 @@ window.onhashchange = function(){
 		else showApp(hash);
 	}
 
+	// Si le hash commence par addsource-
+	if(window.location.hash.startsWith('#addsource-')){
+		// Obtenir le hash
+		var hash = window.location.hash.substring(11);
+
+		// Si le hash est vide
+		if(hash == ''){
+			window.location.hash = '#home';
+		}
+
+		// Sinon
+		else promptAddSource(hash);
+	}
+
 	// Si le hash commence par home
 	if(window.location.hash.startsWith('#home')){
 		// Enlever certains éléments de la page
@@ -179,6 +193,30 @@ function capitalizeFirstLetter(string){
 	return (string.charAt(0).toUpperCase() + string.slice(1)) || string
 }
 
+// Fonction pour ajouter une source via un modal
+function promptAddSource(sourceUrl){
+	// Si un modal est déjà sur la page, l'enlever
+	if(document.querySelector('.mdc-dialog')) document.querySelector('.mdc-dialog').remove();
+
+	// Ajouter le modal sur la page
+	document.body.innerHTML += `<div class="mdc-dialog"><div class="mdc-dialog__container"><div class="mdc-dialog__surface" role="alertdialog" aria-modal="true"><h2 class="mdc-dialog__title">Ajouter une source</h2><div class="mdc-dialog__content space-y-2"><div><p>Voulez-vous ajouter la source <b>"${escapeHTML(sourceUrl)}"</b> ?<br><br>L'ajout de cette source permettra d'ajouter de nouvelles applications dans les résultats de recherches<br>Vous pouvez voir et modifier vos sources depuis <a class="text-blue-400" href="/source">la page associée</a>.</p></div></div><div class="mdc-dialog__actions"><button onclick="addSourceFromModal('${escapeHTML(sourceUrl)}')" class="mdc-button mdc-dialog__button"data-mdc-dialog-action="discard"><div class="mdc-button__ripple"></div><span class="mdc-button__label">Ajouter</span></button><button class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard"><div class="mdc-button__ripple"></div><span class="mdc-button__label">Annuler</span></button></div></div></div></div><div class="mdc-dialog__scrim"></div></div>`
+
+	// "ouvrir" le modal
+	new MDCDialog(document.querySelector('.mdc-dialog')).open();
+}
+
+// Fonction pour ajouter une source DEPUIS un modal
+async function addSourceFromModal(sourceUrl){
+	// Fermer le modal
+	if(document.querySelector('.mdc-dialog')) document.querySelector('.mdc-dialog').remove()
+
+	// Ajouter la source
+	await addSource(sourceUrl)
+
+	// Ajouter un toast
+	showSnackbar("Source ajouté avec succès !", 'Voir les applications', `showSourceDetails('${escapeHTML(sourceUrl)}')`)
+}
+
 // Fonction pour générer une carte d'appli
 function generateCard(name, packageName, icon, platforms, forSkeleton=false){
 	// Crée un formatteur
@@ -193,7 +231,7 @@ function generateCard(name, packageName, icon, platforms, forSkeleton=false){
 	var card = `<li class="py-3 sm:py-4%MORE_CLASS%"><div class="flex items-center space-x-4"><div class="flex-shrink-0">%ICON%</div><div class="flex-1 min-w-0 space-y-1" isCardTitle><p class="text-sm font-medium truncate text-white" id="cardName_${packageName}" isCardName>%NAME%</p><p class="text-sm truncate text-gray-400" id="cardPlatform_${packageName}" isCardPlatforms>%PLATFORMS%</p></div><div class="inline-flex items-center text-base font-semibold text-white" isCardButton>%BUTTON%</div></div></li>`
 
 	// Retourner la carte
-	if(!forSkeleton) return card.replace('%NAME%', escapeHTML(name)).replace('%PLATFORMS%', `Disponible sur ${formatter.format(platforms)}.`).replace('%BUTTON%', `<a isCardButton href="#app-${packageName}" class="mdc-button mdc-button--raised"><span class="mdc-button__ripple"></span><span class="mdc-button__label">Afficher</span></button>`).replace('%ICON%', `<img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${icon}" alt="">`).replace('%MORE_CLASS%', '');
+	if(!forSkeleton) return card.replace('%NAME%', escapeHTML(name)).replace('%PLATFORMS%', `Disponible sur ${formatter.format(platforms)}.`).replace('%BUTTON%', `${window.innerWidth > 560 ? `<button isCardButton onclick="navigator.share({ title: '${escapeHTML(name)}', url: '${location.origin}#app-${escapeHTML(packageName)}' })" class="mdc-button mdc-button--raised mr-2"><span class="mdc-button__ripple"></span><span class="mdc-button__label">Partager</span></button>` : ''}<a isCardButton href="#app-${packageName}" class="mdc-button mdc-button--raised"><span class="mdc-button__ripple"></span><span class="mdc-button__label">Afficher</span></a>`).replace('%ICON%', `<img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/APK_defaultIcon.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${icon}" alt="">`).replace('%MORE_CLASS%', '');
 	if(forSkeleton) return card.replace('%NAME%', '<div class="animate-pulse bg-base-200 w-32 h-4"></div>').replace('%PLATFORMS%', '<div class="animate-pulse bg-base-200 w-64 h-4"></div>').replace('%BUTTON%', '').replace('%ICON%', '<div class="animate-pulse bg-base-200 rounded-full hover:rounded-2xl w-12 h-12"></div>').replace('%MORE_CLASS%', ' skeleton');
 }
 
@@ -262,7 +300,7 @@ async function showApp(packageName){
 		}
 
 	// Générer le code de la carte
-	var code = `<div id="appInfo" class="px-6 py-2"><div class="px-4 py-8 bg-base-100 rounded-lg border shadow-md sm:px-8 border-base-300"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${app.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png'}" alt=""></div><div class="flex-1 min-w-0"><p class="text-md font-medium truncate text-white">${escapeHTML(app.name)}</p><p class="text-sm text-gray-400" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(app.description) || 'Aucune description disponible'}</p></div></div><div class="mt-3"><p class="text-lg text-gray-400 font-bold mb-1">Informations :</p><ul class="list-inside list-none">${appDetails}</ul></div><div class="mt-2">${(app.links) ? '<p class="text-lg text-gray-400 font-bold mb-1">Télécharger via :</p>' : ''}<div>${buttons.join(' ')}</div></div></div></div>`
+	var code = `<div id="appInfo" class="px-6 py-2"><div class="px-4 py-8 bg-base-100 rounded-lg border shadow-md sm:px-8 border-base-300"><div class="flex items-center space-x-4"><div class="flex-shrink-0"><img onerror="this.src = 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/APK_defaultIcon.png'" class="w-12 h-12 rounded-full hover:rounded-2xl" src="${app.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/APK_defaultIcon.png'}" alt=""></div><div class="flex-1 min-w-0"><p class="text-md font-medium truncate text-white">${escapeHTML(app.name)}</p><p class="text-sm text-gray-400" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${escapeHTML(app.description) || 'Aucune description disponible'}</p></div></div><div class="mt-3"><p class="text-lg text-gray-400 font-bold mb-1">Informations :</p><ul class="list-inside list-none">${appDetails}</ul></div><div class="mt-2">${(app.links) ? '<p class="text-lg text-gray-400 font-bold mb-1">Télécharger via :</p>' : ''}<div>${buttons.join(' ')}</div></div></div></div>`
 
 	// Afficher l'application
 	document.getElementById('appList_div').classList.add('hidden')
@@ -428,7 +466,7 @@ async function searchApps(query){
 	// Pour chaque application
 	for(var app of results){
 		// Ajouter une carte
-		document.getElementById('appList').innerHTML += generateCard(app?.item?.name, app?.item?.packageName || app?.item?.link, app?.item?.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/screenshots/findapp-exempleSourceJson.png', app?.item?.links);
+		document.getElementById('appList').innerHTML += generateCard(app?.item?.name, app?.item?.packageName || app?.item?.link, app?.item?.icon || 'https://raw.githubusercontent.com/johan-perso/findapp/main/public/icons/APK_defaultIcon.png', app?.item?.links);
 
 		// Selon la taille d'écran
 		if(window.innerWidth < 470) document.getElementById(`cardPlatform_${app?.item?.packageName || app?.item?.link}`).innerText = app?.item?.description?.split('\n').join(' ') || 'Aucune description'
@@ -524,10 +562,10 @@ async function addSource(sourceLink){
 	localStorage.setItem('sources', JSON.stringify([...JSON.parse(localStorage.getItem('sources') || '[]'), sourceLink]))
 
 	// Ajouter dans la source dans la page
-	document.getElementById('listSourcesTbody').insertAdjacentHTML('beforeend', `<tr sourceName="${encodeURIComponent(sourceLink)}" class="mdc-data-table__row"><th width="50%" style="color: #dee2e6;" class="mdc-data-table__cell" scope="row">${escapeHTML(capitalizeFirstLetter((await fetchSource(sourceLink)).name))}</th><td width="50%" style="color: #dee2e6;" class="mdc-data-table__cell sourceLink">${escapeHTML(sourceLink)}</td><td nowrap style="color: #dee2e6;" class="mdc-data-table__cell"><button class="mdc-button mdc-button--raised" onclick="showSourceDetails(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Afficher</button>\n<button class="mdc-button mdc-button--raised" onclick="removeSource(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Supprimer</button></td></tr>`)
+	if(document.getElementById('listSourcesTbody')) document.getElementById('listSourcesTbody').insertAdjacentHTML('beforeend', `<tr sourceName="${encodeURIComponent(sourceLink)}" class="mdc-data-table__row"><th width="50%" style="color: #dee2e6;" class="mdc-data-table__cell" scope="row">${escapeHTML(capitalizeFirstLetter((await fetchSource(sourceLink)).name))}</th><td width="50%" style="color: #dee2e6;" class="mdc-data-table__cell sourceLink">${escapeHTML(sourceLink)}</td><td nowrap style="color: #dee2e6;" class="mdc-data-table__cell"><button class="mdc-button mdc-button--raised" onclick="showSourceDetails(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Afficher</button>\n<button class="mdc-button mdc-button--raised" onclick="removeSource(this.parentElement.parentElement.querySelector('.sourceLink').innerText)"><span class="mdc-button__ripple"></span>Supprimer</button></td></tr>`)
 
 	// Si la table était masqué, l'afficher
-	if(document.getElementById('listSources').style.display = 'none') document.getElementById('listSources').style.display = ''
+	if(document?.getElementById('listSources')?.style?.display == 'none') document.getElementById('listSources').style.display = ''
 
 	// Vider l'input
 	if(document.getElementById('sourceLink')) document.getElementById('sourceLink').value = ''
