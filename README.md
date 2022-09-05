@@ -15,13 +15,13 @@ FindApp vous permet de cherchez des applications (web et native) pour Android.
 
 ## Sources d'applications
 
-> Les explications pour crée une source sont disponibles sur le site de FindApp, mais peuvent être difficile à comprendre. Voici des explications plus complètes.
+> Les explications pour créer une source sont disponibles sur le site de FindApp, mais peuvent être difficile à comprendre. Voici des explications plus complètes.
 
 **Comment ça marche :**
 
-Une source est un fichier JSON permettant d'établir une liste d'applications, natives et/ou web.
+Une source est un fichier JSON permettant d'établir une liste d'applications, natives et/ou web. Les sources sont utilisés pour alimenter les résultats de recherches.
 
-Vous pouvez depuis la page de [gestion des sources](https://findapp.johanstickman.com/source) ajouter une source par un lien (peut importe le domaine).
+Vous pouvez depuis la page de [gestion des sources](https://findapp.johanstick.me/source) ajouter une source par un lien (peu importe le domaine).
 
 **Créer un fichier de source :**
 
@@ -53,10 +53,10 @@ Votre array `apps` doit contenir des objets avec les propriétés suivantes :
 		},
 		{
 			"name": "Rickdetect",
-			"link": "https://rickdetect.johanstickman.com/",
-			"icon": "https://rickdetect.johanstickman.com/favicon.png",
+			"link": "https://rickdetect.johanstick.me/",
+			"icon": "https://rickdetect.johanstick.me/favicon.png",
 			"description": "Détecter des rick rolls, juste à partir d'un lien.",
-			"manifestLink": "https://rickdetect.johanstickman.com/manifest.json",
+			"manifestLink": "https://rickdetect.johanstick.me/manifest.json",
 			"connectivityType": "worksOffline",
 			"type": "pwa"
 		}
@@ -66,7 +66,7 @@ Votre array `apps` doit contenir des objets avec les propriétés suivantes :
 
 **Héberger une source :**
 
-Vous pouvez utiliser n'importe quelle type d'hébergement, tant qu'il permet de servir des fichiers JSON bruts. Un repo GitHub, ou un Gist peut vous permettre cela.
+Vous pouvez utiliser n'importe quel type d'hébergement, tant qu'il permet de servir des fichiers JSON bruts. Un repo GitHub, ou un Gist peut vous permettre cela.
 
 **Exemple de sources :**
 
@@ -75,4 +75,4 @@ Des exemples de sources complètes peuvent être trouvés dans le dossier [publi
 
 ## Licence
 
-MIT © [Johan](https://johanstickman.com)
+MIT © [Johan](https://johanstick.me)
