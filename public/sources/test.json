@@ -17,10 +17,10 @@
 		},
 		{
 			"name": "Rickdetect",
-			"link": "https://rickdetect.johanstickman.com/",
-			"icon": "https://rickdetect.johanstickman.com/favicon.png",
+			"link": "https://rickdetect.johanstick.me/",
+			"icon": "https://rickdetect.johanstick.me/favicon.png",
 			"description": "Détecter des rick rolls, juste à partir d'un lien.",
-			"manifestLink": "https://rickdetect.johanstickman.com/manifest.json",
+			"manifestLink": "https://rickdetect.johanstick.me/manifest.json",
 			"connectivityType": "worksOffline",
 			"type": "pwa"
 		}
