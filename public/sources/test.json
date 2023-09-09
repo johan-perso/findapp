@@ -16,11 +16,11 @@
 			]
 		},
 		{
-			"name": "Rickdetect",
-			"link": "https://rickdetect.johanstick.me/",
-			"icon": "https://rickdetect.johanstick.me/favicon.png",
-			"description": "Détecter des rick rolls, juste à partir d'un lien.",
-			"manifestLink": "https://rickdetect.johanstick.me/manifest.json",
+			"name": "FindMeme",
+			"link": "https://findmeme.johanstick.fr/",
+			"icon": "https://findmeme.johanstick.fr/images/icon_carre.png",
+			"description": "Le lieu parfait pour trouver le meme parfait, ou en découvrir de nouveaux !",
+			"manifestLink": "https://findmeme.johanstick.fr/manifest.json",
 			"connectivityType": "worksOffline",
 			"type": "pwa"
 		}
