@@ -1,160 +1,92 @@
 <!doctype html>
-<html lang="fr" class="bg-base-300" data-theme="dark">
+<html class="bg-base-200" data-theme="dark">
 <head>
-	<!-- Propriétés imporantes -->
-	<title>FindMeme</title>
+	<!-- Quelques trucs -->
+	<title>FindApp</title>
 	<meta charset="UTF-8"/>
-	<meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-
-	<!-- Icones, PWA -->
-	<link rel="icon" type="image/png" href="images/favicon.png">
-	<link rel="apple-touch-icon" href="images/icon_carre.png">
-	<link rel="apple-touch-startup-image" href="images/icon_carre.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="manifest" href="/manifest.json">
-	<meta name="theme-color" content="#15191e">
+	<meta name="theme-color" content="#6200ee">
+
+	<!-- Favicons -->
+	<link href="/favicon.png" rel="icon">
+	<link href="/favicon.png" rel="apple-touch-icon">
+
+	<!-- Importer des polices d'écriture (Roboto, Product Sans et Material icons) -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
+	<link rel="stylesheet" href="https://egkoppel.github.io/product-sans/css/product-sans-500-all.css">
 
 	<!-- Quelques scripts/libs -->
-	<script src="importSW.js"></script>
-	<script src="main.js"></script>
-	<script defer src="mdtoast.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+	<script src="/script/replaceLinkInPWA.js"></script>
+	<script src="/script/main.js"></script>
+	<script src="/script/importSW.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/localForage/localForage@master/dist/localforage.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+	<link href="/style.css" rel="stylesheet">
+ 
+	<!-- Importer les composants Material Web -->
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-	<!-- Meta tag -->
-	<meta property="og:title" content="FindMeme">
-	<meta name="title" content="FindMeme">
-	<meta property="og:description" content="Le lieu parfait pour trouver le meme parfait, ou en découvrir de nouveaux !">
-	<meta name="description" content="Le lieu parfait pour trouver le meme parfait, ou en découvrir de nouveaux !">
+	<!-- Meta tag pour les réseaux -->
+	<meta property="og:title" content="FindApp">
+	<meta property="og:description" content="Trouver une application, parmis plusieurs stores d'applications.">
 </head>
 <body>
-	<!-- Modal d'informations -->
-	<dialog id="infoModal" class="modal max-[649px]:modal-bottom modal-middle">
-		<form method="dialog" class="modal-box max-[649px]:min-w-full max-[649px]:rounded-b-none">
-			<!-- Bouton pour fermer le modal -->
-			<button aria-label="Afficher les informations" class="btn max-[649px]:text-2xl btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+	<!-- Top bar de l'application -->
+	<header class="mdc-top-app-bar mdc-top-app-bar--fixed top-0">
+		<!-- Barre de chargement progressif -->
+		<div id="loadingProgressContainer" class="w-full h-2 hidden" style="position: absolute; background-color: rgb(98, 0, 200);">
+			<div id="loadingProgress" class="bg-blue-800 h-2" style="width: 0%"></div>
+		</div>
 
-			<!-- Description -->
-			<p class="py-4 text-gray-200">FindMeme est le lieu parfait pour vous permettre de trouver le meme que vous cherchez via une fonction de recherche performante, ou de vous faire découvrir de nouveaux contenus !</p>
+	    <div class="mdc-top-app-bar__row">
+			<!-- Titre -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+	            <a class="mdc-top-app-bar__title cursor-pointer" href="#home" style="font-family: Product Sans;">FindApp</a>
+	        </section>
 
-			<!-- Collapse -->
-			<details class="mt-2 collapse collapse-arrow bg-base-200 text-gray-200">
-				<summary class="collapse-title text-lg font-medium">Proposer ou demander une suppression</summary>
-				<div class="collapse-content text-gray-300 mb-4"> 
-					<p>Pour toute demande en lien avec ce site, vous pouvez <a class="text-blue-400 hover:underline" href="https://johanstick.fr/contact">me contacter</a>. S'il s'agit d'une demande de suppression de contenu, vous devrez préciser son nom, ainsi qu'une raison valable.</p>
-				</div>
-			</details>
+			<!-- Liste des boutons -->
+	        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="source" aria-label="Gestion des sources">shop_2</a>
+	            <a role="button" class="mdc-icon-button material-icons mdc-top-app-bar__action-item--unbounded" href="help" aria-label="Page d'aide">help</a>
+	        </section>
+	    </div>
+	</header>
 
-			<details class="mt-2 collapse collapse-arrow bg-base-200 text-gray-200">
-				<summary class="collapse-title text-lg font-medium">Raccourcis claviers</summary>
-				<div class="collapse-content text-gray-300 mb-4"> 
-					<ul class="list-disc list-inside mt-1">
-						<li><span class="font-bold">CTRL + K</span> : Focus la barre de recherche</li>
-						<li><span class="font-bold">CTRL + L</span> : Focus la barre de recherche en l'effaçant</li>
-						<li><span class="font-bold">CTRL + ↑</span> : Remonte en haut de la page</li>
-						<li><span class="font-bold">CTRL + ↓</span> : Descend en bas de la page</li>
-						<li><span class="font-bold">CTRL + ←</span> : Retourne à la page précédente</li>
-						<li><span class="font-bold">CTRL + →</span> : Avance à la page suivante</li>
-					</ul>
-				</div>
-			</details>
+	<!-- Partie principale -->
+	<div style="margin-top: 4.75rem;" class="px-6">
+		<div class="form-control">
+			<!-- Input pour écrire un terme de recherche -->
+			<input onfocus="this.placeholder = ''" onfocusout="this.placeholder = 'Ecrivez ici pour effectuer une recherche'" id="searchTerm" type="text" class="input w-full text-center" placeholder="Ecrivez ici pour effectuer une recherche">
 
-			<details class="mt-2 collapse collapse-arrow bg-base-200 text-gray-200">
-				<summary class="collapse-title text-lg font-medium">Liste des memes</summary>
-				<div class="collapse-content text-gray-300 mb-4"> 
-					<p>Vous pouvez utiliser la liste des memes présents sur ce site, ainsi que l'API (pas encore documenté) dans n'importe lequel de vos projets :</p>
-					<ul class="list-disc list-inside mt-1">
-						<li><a class="text-blue-400 hover:underline" href="https://findmeme-api.vercel.app/allMemes.txt">Liste des memes | Format TXT</a></li>
-						<li><a class="text-blue-400 hover:underline" href="https://findmeme-api.vercel.app/allMemes.json">Liste des memes | Format JSON</a></li>
-						<li><a class="text-blue-400 hover:underline" href="https://johanstick.notion.site/d255e66838274edda3cb2ff3868b4427">Liste des memes | Sur Notion</a></li>
-					</ul>
-					<p class="mt-3">Pensez à mettre un lien vers ce site si vous l'utilisez dans un projet public !</p>
-				</div>
-			</details>
+			<!-- Bouton pour lancer la recherche -->
+			<button id="searchButton" class="mdc-button mdc-button--raised mt-2" onclick="window.location.hash = '#search-' + document.getElementById('searchTerm').value">
+				<span class="mdc-button__ripple"></span>
+				<span id="search_button_loadingIcon" class="material-icons animate-spin" style="display: none;">cached</span>
+				Rechercher
+			</button>
+		</div>
+	</div>
 
-			<details class="mt-2 collapse collapse-arrow bg-base-200 text-gray-200">
-				<summary class="collapse-title text-lg font-medium">Télécharger les memes</summary>
-				<div class="collapse-content text-gray-300 mb-4"> 
-					<p>Ce fichier peut ne pas être précis et peut manquer certains éléments. Celui-ci a été généré <span id="infoModal_zipDate">à une date inconnue</span>.</p>
-					<p class="mt-3" id="infoModal_zipLink">Impossible d'obtenir le lien de téléchargement. Actualiser la page ou <a class="text-blue-400 hover:underline" href="https://johanstick.fr/contact">signaler ce problème</a> s'il persiste.</p>
-				</div>
-			</details>
-		</form>
-	</dialog>
-
-	<!-- Barre de navigation -->
-	<div class="px-3 py-4 space-y-3 bg-[#6200ee]">
-		<!-- Barre de recherche -->
-		<div class="flex">
-			<div class="mr-2 flex items-center justify-center rounded-2xl bg-[#4c00bb]">
-				<button onclick="history.go(-1)" class="rounded-s-2xl p-1 hover:bg-[#370087]/60">
-					<svg class="p-1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M21.9982 35L7 19.9982L21.9982 5L24.8892 7.91104L12.802 19.9982L24.8892 32.0854L21.9982 35Z" fill="#B2BAC7"/>
-					</svg>
-				</button>
-				<button onclick="history.go(1)" class="rounded-e-2xl p-1 hover:bg-[#370087]/60">
-					<svg class="p-1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M15.911 35L13 32.0854L25.0872 19.9982L13 7.91103L15.911 5L30.8892 19.9982L15.911 35Z" fill="#B2BAC7"/>
-					</svg>
-				</button>
+	<!-- Liste des applications -->
+	<div id="appList_div" class="px-6 py-3 hidden">
+		<div class="p-4 bg-base-100 rounded-lg border shadow-md sm:p-8 border-base-300">
+			<div class="flex justify-between items-center mb-4">
+				<h3 id="text_searchResult" class="text-xl font-bold leading-none text-white">Résultats de recherche</h3>
+				<p id="text_reportSomething" onclick="showReportForm()" class="text-sm font-medium hover:underline text-blue-500 cursor-pointer">
+					Il manque quelque chose ?
+				</p>
 			</div>
-			<input id="search" onkeypress="if(event.keyCode == 13) location.hash = `search-${this.value}`" type="text" class="input w-full text-sm text-center bg-[#4c00bb] font-[Poppins]" placeholder="Rechercher un meme..."/>
-			<button onclick="infoModal.showModal(); addZipLink()" class="ml-2 grid items-center justify-center rounded-2xl p-1 bg-[#4c00bb] hover:bg-[#370087]/60">
-				<svg class="p-1.5" xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 -960 960 960" fill="#b2bac7"><path d="M437.652-268.015h88.898V-520h-88.898v251.985Zm42.252-323.578q20.683 0 34.404-13.411 13.721-13.411 13.721-33.776 0-22.106-13.599-35.489-13.599-13.382-34.243-13.382-21.818 0-35.017 13.207-13.199 13.207-13.199 34.791 0 21.018 13.625 34.539 13.626 13.521 34.308 13.521Zm.02 537.448q-88.151 0-165.959-33.306-77.807-33.307-135.507-91.007T87.451-314.051q-33.306-77.892-33.306-166.23 0-88.353 33.365-166.028 33.366-77.674 91.323-135.616 57.957-57.942 135.511-91.124 77.553-33.183 165.611-33.183 88.419 0 166.365 33.144 77.945 33.143 135.702 91.032 57.757 57.889 90.983 135.827 33.227 77.937 33.227 166.441 0 88.479-33.183 165.742-33.182 77.262-91.124 135.093-57.942 57.832-135.768 91.32-77.826 33.488-166.233 33.488Zm.28-96.435q136.917 0 233.067-96.116 96.149-96.117 96.149-233.508 0-136.917-95.895-233.067-95.895-96.149-233.584-96.149-136.772 0-233.067 95.895-96.294 95.895-96.294 233.584 0 136.772 96.116 233.067 96.117 96.294 233.508 96.294ZM480-480Z"/></svg>
-			</button>
-		</div>
-
-		<!-- Chips contenant toutes les catégories -->
-		<div class="chipsContainer overflow-x-auto">
-			<!-- "afficher tout" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher tout les memes" onclick="location.hash = '#category-tout'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">Afficher tout</p>
-			</button>
-
-			<!-- "Twittos / Streamer" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher les memes 'Twittos et Streamers'" onclick="location.hash = '#category-twittos_streamer'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">Twittos / Streamer</p>
-			</button>
-
-			<!-- "Snapchat" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher les memes 'Snapchat'" onclick="location.hash = '#category-snapchat'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">Snapchat</p>
-			</button>
-
-			<!-- "L'équipe" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher les memes 'L'équipe'" onclick="location.hash = '#category-equipe'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">L'équipe</p>
-			</button>
-
-			<!-- "The Kairi" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher les memes 'The Kairi'" onclick="location.hash = '#category-tk78'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">The Kairi</p>
-			</button>
-
-			<!-- "Le reste" -->
-			<button class="p-1 cursor-pointer rounded-2xl min-w-[9rem] bg-[#4c00bb] hover:bg-[#370087]/70" aria-label="afficher le reste des memes" onclick="location.hash = '#category-reste'">
-				<p class="px-4 lg:px-8 text-center text-md text-gray-200 align-center">Le reste</p>
-			</button>
+			<div class="flow-root">
+				<ul id="appList" role="list"></ul>
+			</div>
 		</div>
 	</div>
 
-	<!-- Bouton pour aller en haut ou en bas -->
-	<div class="fixed bottom-4 right-4 space-y-1" style="z-index: 200;">
-		<div id="topButton">
-			<button aria-label="revenir en haut de la page" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="text-gray-900 bg-[#5d19c1] hover:bg-[#4c00bb] p-2 rounded-full">
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-			</button>
-		</div>
-
-		<div id="bottomButton">
-			<button aria-label="aller en bas de la page" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })" class="text-gray-900 bg-[#5d19c1] hover:bg-[#4c00bb] p-2 rounded-full">
-				<svg style="transform: rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-			</button>
-		</div>
-	</div>
-
-	<!-- Liste des images -->
-	<div class="imagesContainer mx-auto p-8"></div>
-
-	<!-- Conteneur secondaire -->
-	<div class="secondContainer mx-auto p-4"></div>
+	<!-- Conteneur (vide, utilisé avec du JS) -->
+	<div id="app-container"></div>
 </body>
 </html>
