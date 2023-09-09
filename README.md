@@ -21,7 +21,7 @@ FindApp vous permet de cherchez des applications (web et native) pour Android.
 
 Une source est un fichier JSON permettant d'établir une liste d'applications, natives et/ou web. Les sources sont utilisés pour alimenter les résultats de recherches.
 
-Vous pouvez depuis la page de [gestion des sources](https://findapp.johanstick.me/source) ajouter une source par un lien (peu importe le domaine).
+Vous pouvez depuis la page de [gestion des sources](https://findapp.johanstick.fr/source) ajouter une source par un lien (peu importe le domaine).
 
 **Créer un fichier de source :**
 
@@ -52,11 +52,11 @@ Votre array `apps` doit contenir des objets avec les propriétés suivantes :
 			]
 		},
 		{
-			"name": "Rickdetect",
-			"link": "https://rickdetect.johanstick.me/",
-			"icon": "https://rickdetect.johanstick.me/favicon.png",
-			"description": "Détecter des rick rolls, juste à partir d'un lien.",
-			"manifestLink": "https://rickdetect.johanstick.me/manifest.json",
+			"name": "FindMeme",
+			"link": "https://findmeme.johanstick.fr/",
+			"icon": "https://findmeme.johanstick.fr/images/icon_carre.png",
+			"description": "Le lieu parfait pour trouver le meme parfait, ou en découvrir de nouveaux !",
+			"manifestLink": "https://findmeme.johanstick.fr/manifest.json",
 			"connectivityType": "worksOffline",
 			"type": "pwa"
 		}
@@ -75,4 +75,4 @@ Des exemples de sources complètes peuvent être trouvés dans le dossier [publi
 
 ## Licence
 
-MIT © [Johan](https://johanstick.me)
+MIT © [Johan](https://johanstick.fr)
