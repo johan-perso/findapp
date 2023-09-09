@@ -10,7 +10,7 @@
     },
     "author": "JohanStickman",
     "license": "MIT",
-    "homepage": "https://findapp.johanstick.me",
+    "homepage": "https://findapp.johanstick.fr",
     "dependencies": {
         "express": "^4.17.1"
     },
